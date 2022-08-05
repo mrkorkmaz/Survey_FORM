@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to ghelp us improve the platform</p>
+    <form action="script.html">
+       
+       <div>
+         <label for="inpname">Name</label>
+            <input type="text" id="inpname" placeholder="enter your name" required>
+        </div>
+        <div>
+            <label for="inpsurname">Surname</label required>
+        
+                <input type="text" id="inpsurname" placeholder="Enter your Surname">
+        </div>
+        <div>
+            <label for="inpmail" >Email</label>
+            <input type="email" id="inpmail" placeholder="User@clarusway.com">
+        </div>
+        <div>
+            <p> Which option best describes your current role?</p>
+
+            <select name="roles" id="secenek">Select current role
+                <option value="Select current role">select current role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="job">Full Time Job</option>
+                <option value="job">Part Time Job</option>
+                <option value="Learner">Full Time Learner</option>
+                <option value="Prefer">Prefer to say</option>
+            </select>
+            <p>Would you recommend Clarusway to a friend?</p>
+        <div class="radio-button">
+            <ul>
+               <li>
+                 <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/> Definitely, Yes</label>
+                </li>
+                <li>
+            <label>
+            
+                <input type="radio" name="user-recommend"class="input-radio" /> Maybe
+            </label>
+                </li>
+                <li>
+            <label>
+                <input type="radio" class="input-radio" name="user-recommend" /> Not sure
+            </label>
+                </li>
+                <li>
+            <label>
+                <input type="radio" name="user-recommend"class="input-radio" /> Definitely, No
+            </label>
+                </li>
+        </ul>
+        </div>
+       
+        <div>
+             <button type="submit" id="submit" value="submit">submit</button>
+        </div>
+        <div>
+            <p>What is your favorite feature of Clarusway</p>
+            <button>Select an opinion</button>
+        </div>
+
+
+
+
+
+
+
+
+    </form>
+    
+    
+</body>
+</html>
