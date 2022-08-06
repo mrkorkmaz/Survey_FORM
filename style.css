@@ -1,3 +1,15 @@
 li{
     list-style-type: none;
 }
+.box{ 
+    margin: 1rem;
+   
+
+}
+label{
+    width: 300px;
+    height: auto;
+}
+table{
+    margin: center;
+}

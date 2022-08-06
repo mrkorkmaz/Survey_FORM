@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Clarusway Survey Form</h1>
-    <p>Thank you for taking the time to ghelp us improve the platform</p>
-    <form action="script.html">
+    <h1> Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="results.html">
        
-       <div>
-         <label for="inpname">Name</label>
-            <input type="text" id="inpname" placeholder="enter your name" required>
+       <div id="results">
+         <table>
+            <tr>
+            <td><label for="inpname">Name</label></td>
+            <td><input type="text" name="name" id="inpname" placeholder="Enter your name" required class="box"></td>
+            </tr>
         </div>
-        <div>
-            <label for="inpsurname">Surname</label required>
+        <div id="results"><tr>
+            <td><label for="inpsurname">Surname</label required></td>
         
-                <input type="text" id="inpsurname" placeholder="Enter your Surname">
+                <td><input type="text" name="Surname" id="inpsurname" placeholder="Enter your Surname" class="box"></td></tr>
         </div>
-        <div>
-            <label for="inpmail" >Email</label>
-            <input type="email" id="inpmail" placeholder="User@clarusway.com">
+        <div id="results"><tr>
+            <td><label for="inpmail">Email</label></td>
+            <td><input type="email" id="inpmail" placeholder="user@clarusway.com" class="box"></td></tr>
+        
+        </table>
         </div>
-        <div>
+        <div id="results">
             <p> Which option best describes your current role?</p>
 
             <select name="roles" id="secenek">Select current role
@@ -38,7 +43,7 @@
                 <option value="Prefer">Prefer to say</option>
             </select>
             <p>Would you recommend Clarusway to a friend?</p>
-        <div class="radio-button">
+        <div class="radio-button" id="results">
             <ul>
                <li>
                  <label>
@@ -63,18 +68,39 @@
         </ul>
         </div>
        
-        <div>
-             <button type="submit" id="submit" value="submit">submit</button>
-        </div>
-        <div>
+        
+        <div id="results">
             <p>What is your favorite feature of Clarusway</p>
-            <button>Select an opinion</button>
+            <select name="option" id="opt">
+                <option disabled selected value> Select an option</option>
+                <option value="courses">Courses</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="mentors">Mentors</option>
+            </select>
         </div>
+            <div id="results">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <ul>
+                    <li><input type="checkbox" name="improve" id="imp1">
+                    <label for="imp1"> Front-end Project
+                    </label></li>
+                    <li><input type="checkbox" name="improve" id="imp2">
+                    <label for="imp2">Back-end Projects</label></li>
+                    <li><input type="checkbox" name="improve" id="imp3">
+                    <label for="imp3">Data Science</label></li>
+                    <li><input type="checkbox" name="imrpove" id="imp4">
+                    <label for="imp4">Additional Cources</label></li>
+                </ul>
+            </div>
+            <div id="results">
+                <p>Any comments or suggestions?</p>
+                <textarea name="sugg" id="sugg1" cols="30" rows="10"placeholder="Enter your comment here... Thanxs for your comments..."></textarea>
+            </div>
 
-
-
-
-
+            <div>
+                 <button type="submit" id="submit"  value="submit">submit</button>
+            </div>
 
 
 
