@@ -13,3 +13,18 @@ label{
 table{
     margin: center;
 }
+#sugg1{
+    resize: none;
+    width: 500px;
+    height: 250px;
+    
+
+}
+#container{
+    text-align: 150px;
+    width: 80%;
+    margin: 1rem;
+}
+#results{
+    text-align: left;
+}
